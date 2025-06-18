@@ -1,6 +1,6 @@
-module "vpc_network" {
-  source = "./modules/vpc"
-
+module "vpc" {
+  source  = "app.terraform.io/pcb/vpc/gcp"
+  version = "1.0.0"
   project     = "tst"
   region      = "tst"
   zone        = "tst"
